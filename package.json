@@ -1,8 +1,8 @@
 {
-  "name": "reveal.js",
+  "name": "testing-presso",
   "version": "3.0.0",
-  "description": "The HTML Presentation Framework",
-  "homepage": "http://lab.hakim.se/reveal-js",
+  "description": "Testing Presentation",
+  "homepage": "http://ivanoats.github.io/testing-presso",
   "subdomain": "revealjs",
   "main": "js/reveal.js",
   "scripts": {
@@ -10,13 +10,13 @@
     "start": ""
   },
   "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "http://hakim.se"
+    "name": "Ivan Storck",
+    "email": "ivan@ivanstorck.com",
+    "web": "http://ivanstorck.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "url": "git://github.com/ivanoats/testing-presso"
   },
   "engines": {
     "node": "~0.10.0"
