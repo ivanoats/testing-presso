@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -40,346 +40,246 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-                <section>
-                  <h1>Why Test?</h1>
-                  <img style="width: 50em" src="http://media.ivanstorck.com/testing/dilbert-smart-testing.gif" />
-                </section>
-				<section data-background="http://media.ivanstorck.com/testing/ie-cannot.png">
-				</section>
-				<section data-background="http://media.ivanstorck.com/testing/form-validation.png">
-				</section>
-
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
-
-				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
+        <section>
+          <h1>Why Test?</h1>
+          <img
+					   alt="dilbert"
+					   style="width: 50em"
+						 src="http://media.ivanstorck.com/testing/dilbert-smart-testing.gif" />
 						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
+							Hello! My name is Ivan Storck. I am a web developer, but this talk
+							is for non-developers too. Because, it's about Testing. Testing
+							websites better. Automatically.
 						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
+        </section>
 				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
+					<p>Performance Testing</p>
+					<img
+						 style="width: 2000px; border: 0"
+					   src="http://media.ivanstorck.com/testing/ie-cannot.png"
+						 alt="ie error">
+						<p><code><a href="https://www.joedog.org/siege-manual/">$ siege -n1000 -c10</a></code></p>
+						<p>or <a href="http://loadimpact.com">LoadImpact.com</a></p>
+						<aside class="notes">
+							Have any of these happened to you? You launch a web site, and it
+							is immediately hammered by a normal traffic load. It becomes
+							unresponsive.
+						</aside>
 				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
 				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+					<p>Functional Testing / Form Validation</p>
+					<img
+					   style="width: 900px; border: 0"
+					   alt="form validation"
+						 src="http://media.ivanstorck.com/testing/form-validation.png">
+						<aside class="notes">
+							Or something is wrong with the registration form. You get less
+							sign-ups than you thought you would. How would you even know that
+							is happening?
+						</aside>
 				</section>
-
 				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
+					<p>#a11y = accessibility</p>
+					<img
+					  style="border: 0"
+						alt="color blindness test"
+						src="http://media.ivanstorck.com/testing/color-blindness-test.png">
+						<aside class="notes">
+							Or the site isn't accessible to the color-blind, or others.
+						</aside>
 				</section>
-
 				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
+					<img
+					  src="http://media.ivanstorck.com/testing/test-bacon.png"
+						alt="test the bacon">
+						<aside class="notes">
+							All these issues, and more, you can test for.
+						</aside>
 				</section>
-
 				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							<tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							<tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							<tr>
-						</tbody>
-					</table>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
+					<h1>You have a test plan</h1>
+					<p>You point, and click, and click, and point, and type&hellip;</p>
+					<p class="fragment">You just haven’t <b>written</b> it</p>
+					<p class="fragment">Write it down</p>
+					<p class="fragment">Better yet, <b>automate</b> it!</p>
 					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+						The thing is, you already have a test plan. Maybe it just isn't written down
+						yet.  You point and click. And click, and point, and type. This is the
+						equivalent of hunt and peck typing.
+					</aside>
+				</section>
+				<section>
+					<img
+					  src="http://media.ivanstorck.com/testing/urkel-aol.jpg"
+						alt="urkel and aol logo" />
+						<aside class="notes">
+							If you are fine with hunt-and-peck typing,
+							go ahead and check your AOL account now. If you want to learn how to
+							touch-type, I mean, automate your tests, pay attention.
+						</aside>
+				</section>
+				<section data-background="https://38.media.tumblr.com/ee03c190c77ca74e455e26c4bcaefc08/tumblr_nj7fobmQfH1qh9nffo1_1280.gif">
+					<h1 style="color: #fff">No Excuses</h1>
+					<p class="fragment" style="color: #fff">I don't know</p>
+					<p class="fragment" style="color: #fff">It's too hard</p>
+					<p class="fragment" style="color: #fff">I don't have time to do any extra work</p>
+					<p class="fragment" style="color: #fff">It's not my job</p>
+					<aside class="notes">
+						Automating your tests doesn't just save time, it has other benefits too. But
+						before we get to that I want to let you know I've heard your excuses. Come on,
+						I'm a teacher, I've heard it all.
+					</aside>
+				</section>
+				<section>
+					<p style="font-size: 2em">Consider that <b>your job</b> is to build stuff that works.</p>
+					<p>You have an obligation to <b>see if it works</b>, right? </p>
+				</section>
+				<section>
+					<img
+					   style="border: 0"
+					   src="http://media.ivanstorck.com/testing/managing-software-process.jpg"
+					   alt="book cover">
+						<p>over 25 years ago</p>
+					<aside class="notes">
+						In 1989 Watts Humphrey wrote a book, based on his
+						experience at IBM and the Software Engineering Institute, called "Managing the
+						Software Process". He described a process maturity framework called the
+						Capability Maturity Model (CMM).
+					</aside>
+				</section>
+				<section>
+					<img
+					   style="border: 0"
+					   src="http://media.ivanstorck.com/testing/cmm.png"
+						 alt="CMM" />
+						<p>You can't optimize what you don't measure</p>
+					<aside class="notes">
+						Processes range from *ad hoc* to formally
+						defined steps, to managed result metrics, to active optimization of the
+						process. You can't optimize what you don't measure.
+					</aside>
+				</section>
+				<section>
+					<a href="https://developers.google.com/speed/">
+						<img
+							 style="border: 0"
+						   src="http://media.ivanstorck.com/testing/make-the-web-faster.png"
+							 alt="make the web faster" />
+					</a>
+					<p>Google recommends your page should load in < half a second.</p>
+					<aside class="notes">
+						Tests help you measure what you're doing. How long does it take for
+						the home page to load? Google thinks your page should load in under
+						half a second.
+					</aside>
+				</section>
+				<section>
+					<h3>#a11y</h3>
+					<img
+						style="border: 0"
+						src="http://media.ivanstorck.com/testing/codesniffer.png"
+						alt="codesniffer report for uw" />
+						<p><a href="http://squizlabs.github.io/HTML_CodeSniffer/">http://squizlabs.github.io/HTML_CodeSniffer/</a></p>
+					<aside class="notes">
+						How	many potential accessibility errors are there?
+					</aside>
+				</section>
+				<section>
+					<img
+						 style="border: 0"
+						 src="http://2we26u4fam7n16rz3a44uhbe1bq2.wpengine.netdna-cdn.com/wp-content/uploads/062713_1013_OWASPTopTen1.png"
+						 alt="ZED attack proxy" />
+						<p>
+							<a href="https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project">
+								Free Vulnerability Scanner
+								</a>
+						</p>
+					<aside class="notes">
+						Does your site follow best practices for securing student or customer data?
+					</aside>
+				</section>
+				<section>
+					<h1>Regression Testing</h1>
+					<p>When <strike>you</strike> your customers find a bug,</p>
+					<p>how do you make sure it doesn't happen again?</p>
+				</section>
+				<section>
+					<h3>Cucumber</h3>
+					<p>Ruby, JavaScript, Java or C#</p>
+					<img
+						 style="border: 0"
+						 src="http://media.ivanstorck.com/testing/cucumber.png"
+						 alt="Gherkin example" />
+					<aside class="notes">
+						Tests make sure that you're building the right thing - delivering value to your
+						customers. Acceptance tests define the critical features that your site needs
+						to be signed-off-on by the people that are paying you. The people requesting
+						the work.
 					</aside>
 				</section>
 
 				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					<h2>Tests = Specifications = Documentation</h2>
 				</section>
 
 				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
+					<h2>Tests = Reduce the fear of change</h2>
 				</section>
 
 				<section>
-					<h2>Take a Moment</h2>
+					<h1>Selenium</h1>
+					<p><a href="http://www.seleniumhq.org/docs/02_selenium_ide.jsp#">Selenium IDE</a></p>
 					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
+						<a href="http://www.seleniumhq.org/docs/03_webdriver.jsp">WebDriver</a>
+					</p>
+					<p>
+						<a href="http://nightwatchjs.org">NightwatchJS</a>
+						or
+						<a href="http://webdriver.io">WebDriver.io</a>
 					</p>
 				</section>
 
 				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
-
-				<section style="text-align: left;">
-					<h1>THE END</h1>
+					<h1>Sauce Labs</h1>
 					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+						<a href="https://saucelabs.com">Sauce Labs</a>
 					</p>
 				</section>
+
+				<section>
+					<h1>Mocha</h1>
+					<p>
+						<a href="http://jsbin.com/yihep/1/edit?html,output">JSBin example</a>
+					</p>
+				</section>
+
+				<section>
+					<h1>A11y on NPM</h1>
+					<p>
+						<a href="http://addyosmani.github.io/a11y/">a11y npm module</a>
+					</p>
+				</section>
+
+				<section>
+					<h1>Don't Forget Monitoring!</h1>
+					<a href="http://newrelic.com">New Relic</a>
+					<aside class="notes">
+						HealthCare.gov uses NewRelic
+					</aside>
+				</section>
+
+				<section>
+					<h1>Ivan Storck</h1>
+					<p>Web developer, Teacher, Entrepreneur</p>
+					<p>UW PCE Advisory Board member: Ruby, JS, HTML5</p>
+					<p><a href="http://aerobatic.com">Aerobatic</a> Developer Evangelist</p>
+					<p><a href="http://twitter.com/ivanoats">@ivanoats</a></p>
+					<p><a href="http://ivanstorck.com">IvanStorck.com</a></p>
+					<p><a href="http://linkedin.com/in/ivanoats">linkedon.com/in/ivanoats</a></p>
+				</section>
+				<!-- ========================== END OF MY PRESENTATION ============= //-->
+
+				
 
 			</div>
 
